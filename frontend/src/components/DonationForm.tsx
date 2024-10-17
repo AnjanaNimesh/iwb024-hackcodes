@@ -28,7 +28,7 @@ const DonationForm = () => {
     merchant_secret: string
   ): Promise<string> => {
     try {
-      const response = await fetch("http://localhost:5173/generate-hash", {
+      const response = await fetch("http://localhost:5000/generate-hash", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -70,8 +70,8 @@ const DonationForm = () => {
     const currency = "LKR"; // Currency
     const notify_url =
       "https://0050-2402-d000-8118-5426-45f6-ae62-9322-8f7d.ngrok-free.app/payment-notify"; // Your notify URL
-    const return_url = "http://localhost:3000/success"; // Redirect after payment
-    const cancel_url = "http://localhost:3000/cancel"; // Redirect if payment is canceled
+    const return_url = "http://localhost:5173/success"; // Redirect after payment
+    const cancel_url = "http://localhost:5173/cancel"; // Redirect if payment is canceled
     const first_name = "John"; // Example name
     const last_name = "Doe"; // Example name
     const email = "john.doe@example.com"; // Example email
@@ -141,7 +141,7 @@ const DonationForm = () => {
 
     // Sending donation data to the backend
     try {
-      const response = await fetch("http://localhost:5173/api/donations", {
+      const response = await fetch("http://localhost:5000/api/donations", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

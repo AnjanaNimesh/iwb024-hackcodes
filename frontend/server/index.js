@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors'; // Import CORS
 
 const app = express();
-const PORT = 5173; // Change to any port you want
+const PORT = 5000; // Change the port to 5000
 
 app.use(bodyParser.json());
 app.use(cors());
