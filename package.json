@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "payhere-embed-sdk": "^0.7.7"
+  }
+}
