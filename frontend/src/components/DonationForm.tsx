@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import './donation.css';
 
 declare const payhere: any;
 
@@ -162,10 +163,11 @@ const DonationForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="flex flex-col items-center pt-6 p-12 bg-[#f1d1aa] rounded-xl shadow-2xl">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 bg">
+      <div className="bg-image"></div>
+      <div className="flex flex-col items-center pt-8 p-12 bg-[#f1d1aa] rounded-xl shadow-2xl content">
         <h2 className="mb-8 text-xl font-bold text-gray-800">
-          Donate to Stray Animals
+          Donate to Strays
         </h2>
         <div className="flex items-center mb-4 border-none rounded-md">
           <span className="bg-[#bb7d31] border-none text-white px-3 py-2 rounded-l-md">
@@ -186,6 +188,7 @@ const DonationForm = () => {
           Donate
         </button>
       </div>
+      <ToastContainer />
     </div>
   );
 };
