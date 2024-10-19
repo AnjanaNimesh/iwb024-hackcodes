@@ -1,13 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for StrayCare -->
     <title>StrayCare</title>
+    
+    <!-- PayHere integration -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.payhere.lk; object-src 'none';">
+    <link rel="stylesheet" href="https://payhere.lk/payhere-embed-sdk/dist/react.css">
+    <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/icon.png" />
   </head>
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
