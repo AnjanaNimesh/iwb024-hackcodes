@@ -7,8 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
+        "primary": "#fff5f0",
+        "secondary": "#ffcc81",
+        "orange": "#ff6b00",
+        "grey": "#979797",
+        "dark": "#3c424c",
+        "blue": "#1f3e72",
+        "shadow": "0px 23px 21px -8px rgba(136, 160, 255, 0.25)",
         customBrown: '#AF8F6F',
-        customCream:'#F8F4E1'
+        customCream: '#F8F4E1',
       },
     },
   },
