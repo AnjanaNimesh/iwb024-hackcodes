@@ -56,7 +56,7 @@ const Post = () => {
   
     const exists = cartItems.some(item => item.name === cartItem.name);
     if (exists) {
-      toast.error('This item is already in the cart.');
+      toast.error('This Stray is already add.');
       return;
     }
   
@@ -84,7 +84,7 @@ const Post = () => {
   
         localStorage.setItem('cartItems', JSON.stringify(optimizedCartItems));
   
-        toast.success('Item added to cart successfully!');
+        toast.success('The stray has been added successfully!');
         setCartItem({ name: '', category: '', gender: '', weight: '', address: '', description: '', image: '' });
         setImagePreview('');
       } else {
@@ -92,8 +92,8 @@ const Post = () => {
         console.log(response);
       }
     } catch (error) {
-      console.error('Error adding item to cart:', error.response ? error.response.data : error.message);
-      toast.error('Error adding item to cart. Please check the console for details.');
+      console.error('Error adding Stray', error.response ? error.response.data : error.message);
+      toast.error('Error adding Stray. Please check the console for details.');
     }
   };
   
@@ -194,6 +194,8 @@ const Post = () => {
             required
           />
         </div>
+
+        
 
         <button className="submit-button" onClick={handleSubmit}>
           Add Pet
