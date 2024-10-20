@@ -177,8 +177,7 @@ const DonationForm: React.FC<DonationFormProps> = ({ userData }) => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 bg">
-      <div className="bg-image"></div>
-      <div className="flex flex-col items-center pt-8 p-12 bg-[#f1d1aa] rounded-xl shadow-2xl content">
+      <div className="flex flex-col items-center pt-8 p-12 bg-[#f0cca0] rounded-xl shadow-2xl">
         <h2 className="mb-8 text-xl font-bold text-gray-800">
           Donate to Strays
         </h2>
