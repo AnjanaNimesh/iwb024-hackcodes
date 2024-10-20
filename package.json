@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "payhere-embed-sdk": "^0.7.7",
+    "react-accessible-accordion": "^5.0.0"
+  }
+}

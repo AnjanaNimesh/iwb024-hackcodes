@@ -1,0 +1,13 @@
+.bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #ffffff; /* Fallback background color */
+    background-image: url('../assets/Images/bg.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
