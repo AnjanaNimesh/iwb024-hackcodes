@@ -8,21 +8,6 @@ dependencies-toml-version = "2"
 distribution-version = "2201.10.1"
 
 [[package]]
-org = "asus"
-name = "backend"
-version = "0.1.0"
-dependencies = [
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "io"},
-	{org = "ballerina", name = "uuid"},
-	{org = "ballerinai", name = "observe"},
-	{org = "ballerinax", name = "mongodb"}
-]
-modules = [
-	{org = "asus", packageName = "backend", moduleName = "backend"}
-]
-
-[[package]]
 org = "ballerina"
 name = "auth"
 version = "2.12.0"
@@ -325,5 +310,20 @@ dependencies = [
 ]
 modules = [
 	{org = "ballerinax", packageName = "mongodb", moduleName = "mongodb"}
+]
+
+[[package]]
+org = "nisha"
+name = "greeter"
+version = "0.1.0"
+dependencies = [
+	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "io"},
+	{org = "ballerina", name = "uuid"},
+	{org = "ballerinai", name = "observe"},
+	{org = "ballerinax", name = "mongodb"}
+]
+modules = [
+	{org = "nisha", packageName = "greeter", moduleName = "greeter"}
 ]
 

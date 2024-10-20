@@ -1,8 +1,7 @@
 import React from "react";
 import "./Hero.css";
-import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import HeroImg from "../assets/Images/Hero.png";
+import HeroImg from "/hero.png";
 const Hero = () => {
   return (
     <section className="hero-wrapper">

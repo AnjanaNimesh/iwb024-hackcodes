@@ -77,7 +77,7 @@ type Chat record {
 };
 
 // MongoDB client setup
-// mongodb:Client mongoClient = checkpanic new (connection = "mongodb+srv://admin:1234@atlasdemo.wjymy.mongodb.net/?retryWrites=true&w=majority&appName=AtlasDemo");
+// mongodb:Client mongoClient = checkpanic new (connection = <connection string obtained from the MongoDB server>);
 
 mongodb:Client mongoClient = checkpanic new (connection = "mongodb://localhost:27017");
 

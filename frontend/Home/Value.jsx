@@ -11,7 +11,7 @@ import "react-accessible-accordion/dist/fancy-example.css";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import "./Value.css";
 import data from "./accordion";
-import ValueImg from '../assets/Images/Value.png'
+import ValueImg from '/Value.png'
 
 const Value = () => {
   return (

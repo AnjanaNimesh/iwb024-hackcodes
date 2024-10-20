@@ -11,7 +11,7 @@ import "react-accessible-accordion/dist/fancy-example.css";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import "./Help.css";
 import data from "./helps";
-import helpImg from '../assets/Images/Help.png'
+import helpImg from '/Help.png'
 
 const Help = () => {
   return (
