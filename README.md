@@ -11,15 +11,15 @@ Install the required dependencies:
 ### npm install
 
 Install additional packages:
-### npm install react-icons
-### npm install react-outside-click-handler
-### npm install framer-motion
-### npm install react-accessible-accordion
-### npm install react-toastify
-### npm install payhere-embed-sdk --save
+#### npm install react-icons
+#### npm install react-outside-click-handler
+#### npm install framer-motion
+#### npm install react-accessible-accordion
+#### npm install react-toastify
+#### npm install payhere-embed-sdk --save
 
 Install daisyUI as a Node package:
-npm i -D daisyui@latest
+#### npm i -D daisyui@latest
 
 In the project directory, you can run:
 
