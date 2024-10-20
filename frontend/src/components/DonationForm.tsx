@@ -5,7 +5,18 @@ import './donation.css';
 
 declare const payhere: any;
 
-const DonationForm = () => {
+interface UserData {
+  name: string;
+  email: string;
+  mobile: string;
+  address: string;
+}
+
+interface DonationFormProps {
+  userData: UserData;
+}
+
+const DonationForm: React.FC<DonationFormProps> = ({ userData }) => {
   const [amount, setAmount] = useState("");
 
   useEffect(() => {
@@ -15,8 +26,10 @@ const DonationForm = () => {
     script.onload = () => console.log("PayHere SDK loaded");
     script.onerror = () => console.error("Failed to load PayHere SDK");
     document.body.appendChild(script);
+
     return () => {
       document.body.removeChild(script);
+
     };
   }, []);
 
@@ -73,11 +86,11 @@ const DonationForm = () => {
       "https://0050-2402-d000-8118-5426-45f6-ae62-9322-8f7d.ngrok-free.app/payment-notify"; // Your notify URL
     const return_url = "http://localhost:5173/success"; // Redirect after payment
     const cancel_url = "http://localhost:5173/cancel"; // Redirect if payment is canceled
-    const first_name = "John"; // Example name
-    const last_name = "Doe"; // Example name
-    const email = "john.doe@example.com"; // Example email
-    const phone = "0771234567"; // Example phone
-    const address = "No.1, Main Street"; // Example address
+    const first_name = userData?.name?.split(" ")[0] || "First"; // Extract first name
+    const last_name = userData?.name?.split(" ")[1] || "Last"; // Extract last name
+    const email = userData?.email || "example@example.com"; // Use user email
+    const phone = userData?.mobile || "0771234567"; // Use user phone
+    const address = userData?.address || "Sri Lanka"; // Use user address
     const city = "Colombo"; // Example city
     const country = "Sri Lanka"; // Example country
 
